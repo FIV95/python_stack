@@ -1,0 +1,17 @@
+Python Fundamentals
+
+Data Types
+      Primitive Types:
+            Numbers
+            Strings
+            Booleans
+
+      Composite Types
+            Lists
+            Dictionaries
+            Tuples
+
+Common Functions
+      print() logs
+      len() gives the length of a data type
+      type() indicates the type of datatype the variable is
