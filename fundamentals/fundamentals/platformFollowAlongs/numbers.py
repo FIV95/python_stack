@@ -9,5 +9,5 @@ float(num)
 print(num)
 
 ## the following requires me to import random
-randomNumber = random.randint(4,5)
+randomNumber = random.randint(4,5) ## this is inclusive
 print(randomNumber)
