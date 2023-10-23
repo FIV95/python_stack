@@ -1,0 +1,43 @@
+Everything can be an object
+
+we define the type of objects in a:
+CLASS
+
+take a tree for example it has:
+ATTRIBUTES -- These are like the characteristics
+      Trunk
+      Leaves
+      Branches
+      Roots
+
+Tree Behaviors:
+METHODS -- These are like the things they can do with those characteristics
+      Grows
+      Sways
+      Produces Fruit
+      Makes Leaves
+      Drop leaves
+
+Designing classes:
+
+Three Building types:
+
+Barracks
+      Attributes:
+            X axis
+            Y axis
+            Health
+      Methods:
+            Create solidiers
+Every time a barracks is created you create an Object/Instance
+      Every Object/instance has the same attributes and methods as Barracks
+            You can privatize certain attributes and methods
+            you can also have protected attributes and methods that will be sent to children
+            by default methods and attributes are public
+
+Constructors are the blueprints for new objects/instances
+Destructors are the blueprints when the object is destroyed
+
+Say the barracks has an upgrade option:
+If it gets upgraded
+      the upgraded barracks can Inherit the attributes and methods from the original classes
