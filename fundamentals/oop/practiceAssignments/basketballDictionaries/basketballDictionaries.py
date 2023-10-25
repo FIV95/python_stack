@@ -63,3 +63,4 @@ class Player:
             self.team = player_info["team"]
 
 Player.printAllPlayerData()
+Player.createInstances()
