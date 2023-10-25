@@ -57,7 +57,7 @@ class BankAccount:
             self.balance *= self.int_rate
             return self
 
-account1 = BankAccount(first_name_on_account='Alan',balance=5000, int_rate=.02)
+account1 = BankAccount(first_name_on_account='Alan' ,balance=5000, int_rate=.02)
 account2 = BankAccount(first_name_on_account='Alan',balance=500, int_rate=.02)
 account3 = BankAccount()
 account4 = BankAccount()
