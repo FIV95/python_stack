@@ -102,7 +102,18 @@ class User(BankAccount):
             selectedAccount = self.account_list[accountIndex]
             selectedAccount.display_account_info()
 
+      def transfer_money(self,accountIndex, amount_to_transfer, target_user, target_user_account):
+            ## who-ever invokes this function will be the self
+            selectedAccount = self.account_list[accountIndex] ## this targets the account the user wants to transfer money out of
+            targetAccount = target_user.account_list[target_user_account]
+            ## we need to access our balance somehow and take money out of it
+            ## we also need to get the targer_users selected account as well --- im going back up to redfine that now on line 108
+            selectedAccount.balance -= amount_to_transfer
+            targetAccount.balance += amount_to_transfer
+
 alanWake1 = User('Alan', 'Wake', 'alanistheman@yahoo.com')
+elcid = User('El', 'Cid', 'iwasbornbeforeEmail.com')
+elcid.create_account("El", "Cid", .02, 1000)
 alanWake1.create_account("Alan", "Wake", .02, 5000)
 alanWake1.create_account("Alan", "Wake", .02, 3000)
 # print(alanWake1.account_list[0])
@@ -117,14 +128,18 @@ alanWake1.withdraw(523,0)
 alanWake1.account_list[0].display_account_info()
 alanWake1.display_account_balance(0)
 alanWake1.display_account_info(0)
+alanWake1.transfer_money(0,500,elcid,0)
+alanWake1.display_account_info(0)
+elcid.display_account_balance(0)
 
 
 
 
 
 
-
-
+## def deposit(self, amount, accountIndex):
+# selectedAccount=self.account_list[accountIndex]
+#selectedAccount.deposit(amount)
 
 # user_list = [
 #       {
