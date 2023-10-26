@@ -1,0 +1,38 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="{{ url_for('static', filename='/css/style.css') }}">
+            <title>Checkerboard</title>
+      </head>
+      <body>
+      <div class ="master">
+            <h1><a href="/4">8by4</a></h1>
+            {%for i in range(0,y)%}
+                  <div class="row1">
+                        {% for i in range(0,x)%}
+                              {% if i % 2 == 1 %}
+                                    <div class="boxtype2"></div>
+                              {% else %}
+                                    <div class="boxtype1"></div>
+                              {% endif %}
+                        {% endfor %}
+                  </div>
+                  <div class="row2">
+                  {% for i in range(0,x)%}
+                  {% if i % 2 == 1 %}
+                  <div class="boxtype1"></div>
+                  {% else %}
+                  <div class="boxtype2"></div>
+
+                  {% endif %}
+                  {% endfor %}
+                  </div>
+
+            {% endfor %}
+      </div>
+      </div>
+
+      </body>
+      </html>
