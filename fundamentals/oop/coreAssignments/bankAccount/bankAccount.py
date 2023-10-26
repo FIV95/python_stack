@@ -140,21 +140,3 @@ elcid.display_account_balance(0)
 ## def deposit(self, amount, accountIndex):
 # selectedAccount=self.account_list[accountIndex]
 #selectedAccount.deposit(amount)
-
-# user_list = [
-#       {
-#             "first_name": "Alan",
-#             "last_name": "Wake",
-#             "Accounts": ["<account1>","<account2>" "<account3>"],
-#       },
-#             {
-#             "first_name": "Bob",
-#             "last_name": "Anders",
-#             "Accounts": ["<account1>","<account2>" "<account3>"],
-#       },
-#             {
-#             "first_name": "Conner",
-#             "last_name": "Tillman",
-#             "Accounts": ["<account1>","<account2>" "<account3>"],
-#       },
-# ]
