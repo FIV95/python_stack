@@ -1,6 +1,7 @@
-from flask import Flask, render_template, request, redirect
-
+from flask import Flask, render_template, request, redirect, session
 app = Flask(__name__)
+app.secret_key = 'keep it secret, keep it safe'
+
 
 def charge_card(card_number):
       print(f'charging {card_number} $200.00...')
@@ -25,6 +26,8 @@ def accept():
       print(f"Qty: {request.form['qty']} ")
       print(f"Card: {request.form['user_card']} ")
 
+      session['user_name'] = request.form['user_name']
+
       request_copy = {
             **request.form
       }
@@ -35,9 +38,6 @@ def accept():
       ###
       charge_card(request.form['user_card'])
       return render_template("thanks.html", name=request.form['user_name'])
-
-@app.route('/thanks')
-
 
 
 
