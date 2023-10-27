@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/static/css/style.css" />
+		<title>Counter</title>
+	</head>
+	<body>
+		<div class="headCount">
+			<h1>Counter Assignment</h1>
+			<p id="count">{{session['count']}}</p>
+		</div>
+		<div class="buttons">
+			<form method="get" action="/countIncrease">
+				<button id="twovisits" type="submit" name="twovisits">
+					Add two visits
+				</button>
+			</form>
+			<form method="get" action="/countReset">
+				<button id="reset" type="submit" name="reset">Reset</button>
+			</form>
+                  <form method="post" action="/submit">
+                        <label for="text_input">Enter Text:</label>
+                        <input type="text" id="text_input" name="user_text" placeholder="type something...">
+                        <button type="sumbit">Submit</button>
+
+                  </form>
+		</div>
+	</body>
+</html>
