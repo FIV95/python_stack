@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Post form Submission</title>
+	</head>
+	<body>
+		<h1>Index Page</h1>
+		<h3>Create a User</h3>
+		<form method="post" action="/process">
+			<input type="hidden" name="which_form" value="register" />
+			<input type="text" name="first_name" />
+			<input type="text" name="last_name" />
+			<input type="text" name="email" />
+			<input type="password" name="password" />
+			<input type="submit" value="Register" />
+		</form>
+		<form method="post" action="/process">
+			<input type="hidden" name="which_form" value="login" />
+			<input type="text" name="email" />
+			<input type="password" name="password" />
+			<input type="submit" value="Login" />
+		</form>
+	</body>
+</html>
+
+
+<!-- There are two forms on the page, each with its own set of input fields.
+
+Each form includes a hidden input field named "which_form" to indicate whether the user is registering or logging in.
+
+In the first form, the "which_form" input field has a value of "register," indicating that the user is submitting a registration form.
+
+In the second form, the "which_form" input field has a value of "login," indicating that the user is submitting a login form.
+
+The other input fields collect data such as first name, last name, email, and password, depending on the form's purpose.
+
+When the user submits one of these forms, the value of the "which_form" input field will be included in the POST request to the server, allowing the server to identify which form the user filled out. -->
