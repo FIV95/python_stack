@@ -1,0 +1,236 @@
+mysql> source /Users/fiv/Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/leftJoin/twitter.sql
+Query OK, 1 row affected, 2 warnings (0.00 sec)
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 4 warnings (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 7 rows affected (0.00 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 4 warnings (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 7 rows affected (0.00 sec)
+Records: 7  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 3 warnings (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 12 rows affected (0.00 sec)
+Records: 12  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 2 warnings (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 5 rows affected (0.00 sec)
+Records: 5  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> SELECT * FROM tweets where user_id = 1;
++----+-----------------------------------------------------------------------------------------------------------------------------------------+---------+---------------------+---------------------+
+| id | tweet                                                                                                                                   | user_id | created_at          | updated_at          |
++----+-----------------------------------------------------------------------------------------------------------------------------------------+---------+---------------------+---------------------+
+|  1 | There is power in understanding the journey of others to help create your own                                                           |       1 | 2002-02-01 00:00:01 | 2002-02-01 00:00:01 |
+|  2 | Congrats Coach K! Amazing accomplishment #1KforCoachK #Duke                                                                             |       1 | 2005-02-01 00:00:01 | 2005-02-01 00:00:01 |
+|  3 | This is what happens when I pass too much! #ShoulderShock thank u all for ur thoughts and prayers #team @DrinkBODYARMOR @Lakers #oneluv |       1 | 2004-02-01 00:00:01 | 2004-02-01 00:00:01 |
+|  4 | Feeling a mix of emotions I haven't felt in 18yrs of being a pro #journey #19th                                                         |       1 | 2012-02-01 00:00:01 | 2012-02-01 00:00:01 |
++----+-----------------------------------------------------------------------------------------------------------------------------------------+---------+---------------------+---------------------+
+4 rows in set (0.01 sec)
+
+mysql> SELECT * FROM users LEFT JOIN tweets ON users.id = tweets.user_id
+    -> WHERE users.id = 1;
++----+------------+-----------+------------+------------+---------------------+---------------------+------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+---------------------+---------------------+
+| id | first_name | last_name | handle     | birthday   | created_at          | updated_at          | id   | tweet                                                                                                                                   | user_id | created_at          | updated_at          |
++----+------------+-----------+------------+------------+---------------------+---------------------+------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+---------------------+---------------------+
+|  1 | Kobe       | Bryant    | kobebryant | 1978-08-23 | 2010-02-01 00:00:01 | 2011-07-01 00:00:01 |    1 | There is power in understanding the journey of others to help create your own                                                           |       1 | 2002-02-01 00:00:01 | 2002-02-01 00:00:01 |
+|  1 | Kobe       | Bryant    | kobebryant | 1978-08-23 | 2010-02-01 00:00:01 | 2011-07-01 00:00:01 |    2 | Congrats Coach K! Amazing accomplishment #1KforCoachK #Duke                                                                             |       1 | 2005-02-01 00:00:01 | 2005-02-01 00:00:01 |
+|  1 | Kobe       | Bryant    | kobebryant | 1978-08-23 | 2010-02-01 00:00:01 | 2011-07-01 00:00:01 |    3 | This is what happens when I pass too much! #ShoulderShock thank u all for ur thoughts and prayers #team @DrinkBODYARMOR @Lakers #oneluv |       1 | 2004-02-01 00:00:01 | 2004-02-01 00:00:01 |
+|  1 | Kobe       | Bryant    | kobebryant | 1978-08-23 | 2010-02-01 00:00:01 | 2011-07-01 00:00:01 |    4 | Feeling a mix of emotions I haven't felt in 18yrs of being a pro #journey #19th                                                         |       1 | 2012-02-01 00:00:01 | 2012-02-01 00:00:01 |
++----+------------+-----------+------------+------------+---------------------+---------------------+------+-----------------------------------------------------------------------------------------------------------------------------------------+---------+---------------------+---------------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT tweets.tweet
+    -> FROM users
+    -> LEFT JOIN tweets
+    -> ON users.id = tweets.user_id
+    -> WHERE users.id = 1;
++-----------------------------------------------------------------------------------------------------------------------------------------+
+| tweet                                                                                                                                   |
++-----------------------------------------------------------------------------------------------------------------------------------------+
+| There is power in understanding the journey of others to help create your own                                                           |
+| Congrats Coach K! Amazing accomplishment #1KforCoachK #Duke                                                                             |
+| This is what happens when I pass too much! #ShoulderShock thank u all for ur thoughts and prayers #team @DrinkBODYARMOR @Lakers #oneluv |
+| Feeling a mix of emotions I haven't felt in 18yrs of being a pro #journey #19th                                                         |
++-----------------------------------------------------------------------------------------------------------------------------------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT tweets.tweet as Colby's tweets FROM users LEFT JOIN tweets ON users.id = tweets.user_id WHERE users.id = 1;
+    '> ;
+    '> SELECT tweets.tweet as Colby's tweets FROM users LEFT JOIN tweets ON users.id = tweets.user_id WHERE users.id = 1;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''s tweets FROM users LEFT JOIN tweets ON users.id = tweets.user_id WHERE users.i' at line 1
+mysql> SELECT tweets.tweet as Colby's tweets FROM users LEFT JOIN tweets ON users.id = tweets.user_id WHERE users.id = 1;
+;
+SELECT tweets.tweet as Colby's tweets FROM users LEFT JOIN tweets ON users.id = tweets.user_id WHERE users.id = 1;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''s tweets FROM users LEFT JOIN tweets ON users.id = tweets.user_id WHERE users.i' at line 1
+mysql> SELECT tweets.tweet as Colby's tweets FROM users LEFT JOIN tweets ON users.id = tweets.user_id WHERE users.id = 1;
+;
+SELECT tweets.tweet AS Colby's tweets FROM users LEFT JOIN tweets ON users.id = tweets.user_id WHERE users.id = 1;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ''s tweets FROM users LEFT JOIN tweets ON users.id = tweets.user_id WHERE users.i' at line 1
+mysql> 
+mysql> exit

@@ -1,0 +1,779 @@
+mysql> < morepractice.sql
+    -> ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '< morepractice.sql' at line 1
+mysql> source morepractice.sql
+ERROR: 
+Failed to open file 'morepractice.sql', error: 2
+mysql> source /Users/fiv/Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt/morepractice.sql
+ERROR: 
+Failed to open file '/Users/fiv/Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt/morepractice.sql', error: 2
+mysql> source /Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt/morepractice.sql
+ERROR: 
+Failed to open file '/Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt/morepractice.sql', error: 2
+mysql> source /Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt/morepractice.sql
+ERROR: 
+Failed to open file '/Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt/morepractice.sql', error: 2
+mysql> source /Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt/morepractice.sql
+ERROR: 
+Failed to open file '/Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt/morepractice.sql', error: 2
+mysql> source Users/fiv/Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt/morepractice.sql
+ERROR: 
+Failed to open file 'Users/fiv/Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt/morepractice.sql', error: 2
+mysql> source Users/fiv/Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt
+ERROR: 
+Failed to open file 'Users/fiv/Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt', error: 2
+mysql> source Users/fiv/Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt/morepractice.sql
+ERROR: 
+Failed to open file 'Users/fiv/Desktop/codingDojo/python_stack/mysql/platformFollowAlongs/joins_secondAttempt/morepractice.sql', error: 2
+mysql> source morepractice.sql
+Query OK, 1 row affected, 1 warning (0.01 sec)
+
+Database changed
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 2 warnings (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 25 rows affected (0.00 sec)
+Records: 25  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.01 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 10 rows affected (0.00 sec)
+Records: 10  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 2 warnings (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.01 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 35 rows affected (0.00 sec)
+Records: 35  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected, 2 warnings (0.00 sec)
+
+Query OK, 0 rows affected, 1 warning (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 25 rows affected (0.01 sec)
+Records: 25  Duplicates: 0  Warnings: 0
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+Query OK, 0 rows affected (0.00 sec)
+
+mysql> show databases;
++----------------------+
+| Database             |
++----------------------+
+| event_planner_schema |
+| information_schema   |
+| joins                |
+| joins2               |
+| lead_gen_business    |
+| mysql                |
+| names                |
+| performance_schema   |
+| sys                  |
+| twitter              |
+| users                |
++----------------------+
+11 rows in set (0.01 sec)
+
+mysql> use lead_gen_business
+Database changed
+mysql> show tables;
++-----------------------------+
+| Tables_in_lead_gen_business |
++-----------------------------+
+| billing                     |
+| clients                     |
+| leads                       |
+| sites                       |
++-----------------------------+
+4 rows in set (0.00 sec)
+
+mysql> SELECT * FROM billing;
++----+--------+---------------------+------------+
+| id | amount | charged_datetime    | clients_id |
++----+--------+---------------------+------------+
+|  1 |    300 | 2011-01-01 14:50:25 |          1 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 |
++----+--------+---------------------+------------+
+25 rows in set (0.01 sec)
+
+mysql> SELECT * FROM billing JOIN clients ON billing.clients_id = clients.id
+    -> ;
++----+--------+---------------------+------------+----+------------+-------------+---------------------------+---------------------+
+| id | amount | charged_datetime    | clients_id | id | first_name | last_name   | email                     | joined_datetime     |
++----+--------+---------------------+------------+----+------------+-------------+---------------------------+---------------------+
+|  1 |    300 | 2011-01-01 14:50:25 |          1 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
++----+--------+---------------------+------------+----+------------+-------------+---------------------------+---------------------+
+25 rows in set (0.00 sec)
+
+mysql> SELECT * FROM clients
+    -> ;
++----+------------+-------------+---------------------------+---------------------+
+| id | first_name | last_name   | email                     | joined_datetime     |
++----+------------+-------------+---------------------------+---------------------+
+|  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+|  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+|  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+|  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+|  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+|  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+|  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+|  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+|  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
++----+------------+-------------+---------------------------+---------------------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT * FROM billing
+    -> ;
++----+--------+---------------------+------------+
+| id | amount | charged_datetime    | clients_id |
++----+--------+---------------------+------------+
+|  1 |    300 | 2011-01-01 14:50:25 |          1 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 |
++----+--------+---------------------+------------+
+25 rows in set (0.00 sec)
+
+mysql> SELECT * FROM billing JOIN clients ON billing.clients_id = clients_id ORDER BY clients.id;
++----+--------+---------------------+------------+----+------------+-------------+---------------------------+---------------------+
+| id | amount | charged_datetime    | clients_id | id | first_name | last_name   | email                     | joined_datetime     |
++----+--------+---------------------+------------+----+------------+-------------+---------------------------+---------------------+
+|  1 |    300 | 2011-01-01 14:50:25 |          1 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 |  1 | Michael    | Choi        | mchoi@village88.com       | 2010-04-05 14:09:08 |
+|  1 |    300 | 2011-01-01 14:50:25 |          1 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 |  2 | Joe        | Smith       | joe@village88.com         | 2010-04-14 14:10:09 |
+|  1 |    300 | 2011-01-01 14:50:25 |          1 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 |  3 | Ryan       | Owen        | rowen@village88.com       | 2011-02-09 14:10:29 |
+|  1 |    300 | 2011-01-01 14:50:25 |          1 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   | 2011-04-28 18:16:29 |
+|  1 |    300 | 2011-01-01 14:50:25 |          1 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    | 2011-05-23 17:33:20 |
+|  1 |    300 | 2011-01-01 14:50:25 |          1 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 |  6 | John       | Supsupin    | jsupsupin@village88.com   | 2011-05-29 19:23:33 |
+|  1 |    300 | 2011-01-01 14:50:25 |          1 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com | 2011-06-01 01:02:03 |
+|  1 |    300 | 2011-01-01 14:50:25 |          1 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 |  8 | Maria      | Gonzales    | mgonzales@village88.com   | 2011-08-09 01:22:33 |
+|  1 |    300 | 2011-01-01 14:50:25 |          1 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 |  9 | Tom        | Owen        | towen@village88.com       | 2011-08-22 16:33:23 |
+|  1 |    300 | 2011-01-01 14:50:25 |          1 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+|  2 |    500 | 2011-01-15 14:50:25 |          3 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+|  3 |    500 | 2011-02-11 14:50:25 |          5 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+|  4 |   1200 | 2011-02-22 14:50:25 |          7 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+|  5 |   2500 | 2011-02-27 14:50:25 |          9 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+|  6 |    500 | 2011-03-06 14:50:25 |         10 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+|  7 |   1000 | 2011-03-13 14:50:25 |          8 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+|  8 |    200 | 2011-04-02 14:50:25 |          4 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+|  9 |   5000 | 2011-04-06 14:50:25 |          1 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 10 |   1000 | 2011-04-11 14:50:25 |          2 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 11 |    500 | 2011-05-08 15:55:32 |          6 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 12 |    750 | 2011-06-18 13:22:09 |          6 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 13 |    100 | 2011-07-19 13:22:09 |          8 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 14 |    800 | 2011-06-21 13:22:09 |          4 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 15 |    900 | 2011-06-22 13:22:09 |          2 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 16 |   5200 | 2011-07-02 13:22:09 |          3 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 17 |    650 | 2011-08-24 13:22:09 |          4 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 18 |    450 | 2011-09-16 13:22:09 |          1 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 19 |   2500 | 2011-10-18 13:22:09 |          1 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 20 |   3600 | 2012-01-03 13:22:09 |          2 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 21 |   8000 | 2012-02-05 13:22:09 |          8 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 22 |    640 | 2012-03-07 13:22:09 |          7 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 23 |    150 | 2012-04-08 13:22:09 |          9 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 24 |    680 | 2012-04-02 13:22:09 |         10 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
+| 25 |   1200 | 2012-05-09 13:22:09 |          1 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     | 2011-09-01 17:18:09 |
++----+--------+---------------------+------------+----+------------+-------------+---------------------------+---------------------+
+250 rows in set (0.00 sec)
+
+mysql> SELECT * (sum)amount, clients.id, clients.first_name, clients.last_name, clients.email, FROM billing JOIN clients ON billing.clients_id = clients.id GROUP BY clients_id;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '(sum)amount, clients.id, clients.first_name, clients.last_name, clients.email, F' at line 1
+mysql> SELECT (sum)amount, clients.id, clients.first_name, clients.last_name, clients.email, FROM billing JOIN clients ON billing.clients_id = clients.id GROUP BY clients_id;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM billing JOIN clients ON billing.clients_id = clients.id GROUP BY clients_id' at line 1
+mysql> SELECT sum(amount), clients.id, clients.first_name, clients.last_name, clients.email, FROM billing JOIN clients ON billing.clients_id = clients.id GROUP BY clients_id;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM billing JOIN clients ON billing.clients_id = clients.id GROUP BY clients_id' at line 1
+mysql> SELECT SUM(billing.amount) AS total_amount,
+    -> clients.id,
+    -> clients.first_name,
+    -> clients.last_name,
+    -> clients.email
+    -> FROM billing
+    -> JOIN clients on billing.clients_id = clients.id
+    -> GROUP BY
+    -> clients.id, clients.first_name, clients.last_name, clients.email;
++--------------+----+------------+-------------+---------------------------+
+| total_amount | id | first_name | last_name   | email                     |
++--------------+----+------------+-------------+---------------------------+
+|         9450 |  1 | Michael    | Choi        | mchoi@village88.com       |
+|         5500 |  2 | Joe        | Smith       | joe@village88.com         |
+|         5700 |  3 | Ryan       | Owen        | rowen@village88.com       |
+|         1650 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   |
+|          500 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    |
+|         1250 |  6 | John       | Supsupin    | jsupsupin@village88.com   |
+|         1840 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com |
+|         9100 |  8 | Maria      | Gonzales    | mgonzales@village88.com   |
+|         2650 |  9 | Tom        | Owen        | towen@village88.com       |
+|         1180 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     |
++--------------+----+------------+-------------+---------------------------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT SUM(billing.amount) AS total_amount COUNT(*) AS number_of_transactions , clients.id, clients.first_name, clients.last_name, clients.email FROM billing JOIN clients on billing.clients_id = clients.id GROUP BY clients.id, clients.first_name, clients.last_name, clients.email;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'COUNT(*) AS number_of_transactions , clients.id, clients.first_name, clients.las' at line 1
+mysql> SELECT SUM(billing.amount) AS total_amount, COUNT(*) AS number_of_transactions , clients.id, clients.first_name, clients.last_name, clients.email FROM billing JOIN clients on billing.clients_id = clients.id GROUP BY clients.id, clients.first_name, clients.last_name, clients.email;
++--------------+------------------------+----+------------+-------------+---------------------------+
+| total_amount | number_of_transactions | id | first_name | last_name   | email                     |
++--------------+------------------------+----+------------+-------------+---------------------------+
+|         9450 |                      5 |  1 | Michael    | Choi        | mchoi@village88.com       |
+|         5500 |                      3 |  2 | Joe        | Smith       | joe@village88.com         |
+|         5700 |                      2 |  3 | Ryan       | Owen        | rowen@village88.com       |
+|         1650 |                      3 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   |
+|          500 |                      1 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    |
+|         1250 |                      2 |  6 | John       | Supsupin    | jsupsupin@village88.com   |
+|         1840 |                      2 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com |
+|         9100 |                      3 |  8 | Maria      | Gonzales    | mgonzales@village88.com   |
+|         2650 |                      2 |  9 | Tom        | Owen        | towen@village88.com       |
+|         1180 |                      2 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     |
++--------------+------------------------+----+------------+-------------+---------------------------+
+10 rows in set (0.01 sec)
+
+mysql> SELECT SUM(billing.amouint) AS total_amount,
+    -> COUNT (*) AS number_of_transactions,
+    -> clients.id,
+    -> clients.first_name,
+    -> clients.last_name,
+    -> clients.email
+    -> FROM billing
+    -> JOIN clients on billing.clients_id =
+    -> clients.id GROUP BY 
+    -> clients.id,
+    -> clients.first_name,
+    -> clients.last_name,
+    -> clients.email;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) AS number_of_transactions,
+clients.id,
+clients.first_name,
+clients.last_name,' at line 2
+mysql> SELECT SUM(billing.amount) AS total_amount,
+    -> COUNT (*) AS number_of_transactions,
+    -> clients.id,
+    -> clients.first_name,
+    -> clienst.last_name
+    -> ,clients.email
+    -> FROM billing
+    -> JOIN clients on billing.clients_id = 
+    -> clients.id
+    -> GROUP BY
+    -> clients.id,
+    -> clients.first_name,
+    -> clients.last_name,
+    -> clients.email;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '*) AS number_of_transactions,
+clients.id,
+clients.first_name,
+clienst.last_name
+' at line 2
+mysql> SELECT SUM(billing.amount) AS total_amount,
+    -> COUNT(*) AS number_of_transcations,
+    -> client.id,
+    -> 
+    -> :
+    -> ;;;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':' at line 5
+ERROR: 
+No query specified
+
+ERROR: 
+No query specified
+
+mysql> SELECT SUM(billing.amount) AS total_amount,
+    -> COUNT(*) AS number_of_transactions,
+    -> clients.id,
+    -> clients.first_name,
+    -> clients.last_name,
+    -> clients.email
+    -> FROM billing
+    -> JOIN
+    -> clients ON billing.clients_id = clients.id
+    -> GROUP BY clients.id, clients.first_name, clients.last_name, clients.email;
++--------------+------------------------+----+------------+-------------+---------------------------+
+| total_amount | number_of_transactions | id | first_name | last_name   | email                     |
++--------------+------------------------+----+------------+-------------+---------------------------+
+|         9450 |                      5 |  1 | Michael    | Choi        | mchoi@village88.com       |
+|         5500 |                      3 |  2 | Joe        | Smith       | joe@village88.com         |
+|         5700 |                      2 |  3 | Ryan       | Owen        | rowen@village88.com       |
+|         1650 |                      3 |  4 | Masaki     | Fujimuto    | mfujimuto@village88.com   |
+|          500 |                      1 |  5 | Diana      | Sue Manlulu | dmanlulu@village88.com    |
+|         1250 |                      2 |  6 | John       | Supsupin    | jsupsupin@village88.com   |
+|         1840 |                      2 |  7 | Toni Rose  | Panganiban  | tpanganiban@village88.com |
+|         9100 |                      3 |  8 | Maria      | Gonzales    | mgonzales@village88.com   |
+|         2650 |                      2 |  9 | Tom        | Owen        | towen@village88.com       |
+|         1180 |                      2 | 10 | Roosevelt  | Sebial      | rsebial@village88.com     |
++--------------+------------------------+----+------------+-------------+---------------------------+
+10 rows in set (0.01 sec)
+
+mysql> SELECT SUM(billing.amount) AS total_amount, COUNT(*) AS number_of_transactions, clients.id, clients.first_name as first, clients.last_name, clients.email FROM billing JOIN clients ON billing.clients_id = clients.id GROUP BY clients.id, clients.first_name, clients.last_name, clients.email;
++--------------+------------------------+----+-----------+-------------+---------------------------+
+| total_amount | number_of_transactions | id | first     | last_name   | email                     |
++--------------+------------------------+----+-----------+-------------+---------------------------+
+|         9450 |                      5 |  1 | Michael   | Choi        | mchoi@village88.com       |
+|         5500 |                      3 |  2 | Joe       | Smith       | joe@village88.com         |
+|         5700 |                      2 |  3 | Ryan      | Owen        | rowen@village88.com       |
+|         1650 |                      3 |  4 | Masaki    | Fujimuto    | mfujimuto@village88.com   |
+|          500 |                      1 |  5 | Diana     | Sue Manlulu | dmanlulu@village88.com    |
+|         1250 |                      2 |  6 | John      | Supsupin    | jsupsupin@village88.com   |
+|         1840 |                      2 |  7 | Toni Rose | Panganiban  | tpanganiban@village88.com |
+|         9100 |                      3 |  8 | Maria     | Gonzales    | mgonzales@village88.com   |
+|         2650 |                      2 |  9 | Tom       | Owen        | towen@village88.com       |
+|         1180 |                      2 | 10 | Roosevelt | Sebial      | rsebial@village88.com     |
++--------------+------------------------+----+-----------+-------------+---------------------------+
+10 rows in set (0.00 sec)
+
+mysql> SELECT SUM(billing.amount) AS total_amount, COUNT(*) AS number_of_transactions, clients.id, clients.first_name as first, clients.last_name, clients.email FROM billing AS t1 JOIN clients ON billing.clients_id as t2 = clients.id GROUP BY clients.id, clients.first_name, clients.last_name, clients.email;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as t2 = clients.id GROUP BY clients.id, clients.first_name, clients.last_name, c' at line 1
+mysql> SELECT SUM(billing.amount) AS total_amount, COUNT(*) AS number_of_transactions, clients.id, clients.first_name as first, clients.last_name, clients.email FROM billing AS t1 JOIN clients ON billing.clients_id as t2 = clients.id GROUP BY clients.id, clients.first_name, clients.last_name, clients.email;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'as t2 = clients.id GROUP BY clients.id, clients.first_name, clients.last_name, c' at line 1
+mysql> SELECT SUM(billing.amount) AS total_amount, COUNT(*) AS number_of_transactions, clients.id, clients.first_name as first, clients.last_name, clients.email FROM billing JOIN clients ON billing.clients_id = clients.id GROUP BY clients.id, clients.first_name, clients.last_name, clients.email;
++--------------+------------------------+----+-----------+-------------+---------------------------+
+| total_amount | number_of_transactions | id | first     | last_name   | email                     |
++--------------+------------------------+----+-----------+-------------+---------------------------+
+|         9450 |                      5 |  1 | Michael   | Choi        | mchoi@village88.com       |
+|         5500 |                      3 |  2 | Joe       | Smith       | joe@village88.com         |
+|         5700 |                      2 |  3 | Ryan      | Owen        | rowen@village88.com       |
+|         1650 |                      3 |  4 | Masaki    | Fujimuto    | mfujimuto@village88.com   |
+|          500 |                      1 |  5 | Diana     | Sue Manlulu | dmanlulu@village88.com    |
+|         1250 |                      2 |  6 | John      | Supsupin    | jsupsupin@village88.com   |
+|         1840 |                      2 |  7 | Toni Rose | Panganiban  | tpanganiban@village88.com |
+|         9100 |                      3 |  8 | Maria     | Gonzales    | mgonzales@village88.com   |
+|         2650 |                      2 |  9 | Tom       | Owen        | towen@village88.com       |
+|         1180 |                      2 | 10 | Roosevelt | Sebial      | rsebial@village88.com     |
++--------------+------------------------+----+-----------+-------------+---------------------------+
+10 rows in set (0.00 sec)
+
+mysql> exit

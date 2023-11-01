@@ -1,0 +1,301 @@
+mysql> INSERT INTO dojos (name, created_at, updated_at) 
+    -> VALUES ("Lin Kuei Dojo", NOW(), NOW());
+ERROR 1364 (HY000): Field 'id' doesn't have a default value
+mysql> SHOW CREATE TABLE dojos;
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Table | Create Table                                                                                                                                                                                                                                                                                             |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| dojos | CREATE TABLE `dojos` (
+  `id` int NOT NULL,
+  `name` varchar(45) DEFAULT NULL,
+  `created_at` datetime DEFAULT CURRENT_TIMESTAMP,
+  `updated_at` datetime DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci |
++-------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+1 row in set (0.01 sec)
+
+mysql> ALTER TABLE dojos
+    -> MODIFY COLUMN id INT NOT NULL AUTO_INCREMENT,
+    -> ADD PRIMARY KEY (id);
+ERROR 1068 (42000): Multiple primary key defined
+mysql> exit
+mysql> INSERT INTO dojos (name, created_at, updated_at)
+    -> VALUES ("Lin Kuei Dojo" NOW(), NOW());
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'NOW(), NOW())' at line 2
+mysql> INSERT INTO dojos (name, created_at, updated_at) VALUES ("Lin Kuei Dojo", NOW(), NOW());
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO dojos (name, created_at, updated_at) VALUES "Shirai Ryu Dojo" NOW(), NOW());
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"Shirai Ryu Dojo" NOW(), NOW())' at line 1
+mysql> INSERT INTO dojos (name, created_at, updated_at) VALUES "Shirai Ryu Dojo", NOW(), NOW());
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '"Shirai Ryu Dojo", NOW(), NOW())' at line 1
+mysql> INSERT INTO dojos (name, created_at, updated_at) VALUES ("Shirai Ryu Dojo", NOW(), NOW());
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO dojos (name, created_at, updated_at) VALUES ("Brotherhood of Shadow Dojo", NOW(), NOW());
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SHOW TABLE dojos;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'dojos' at line 1
+mysql> SHOW TABLES;
++----------------------------+
+| Tables_in_dojos_and_ninjas |
++----------------------------+
+| dojos                      |
+| ninjas                     |
++----------------------------+
+2 rows in set (0.00 sec)
+
+mysql> SELECT * FROM dojos;
++----+----------------------------+---------------------+---------------------+
+| id | name                       | created_at          | updated_at          |
++----+----------------------------+---------------------+---------------------+
+|  1 | Lin Kuei Dojo              | 2023-10-31 14:57:10 | 2023-10-31 14:57:10 |
+|  2 | Shirai Ryu Dojo            | 2023-10-31 15:00:19 | 2023-10-31 15:00:19 |
+|  3 | Brotherhood of Shadow Dojo | 2023-10-31 15:00:51 | 2023-10-31 15:00:51 |
++----+----------------------------+---------------------+---------------------+
+3 rows in set (0.00 sec)
+
+mysql> TRUNCATE TABLE dojos;
+ERROR 1701 (42000): Cannot truncate a table referenced in a foreign key constraint (`dojos_and_ninjas`.`ninjas`, CONSTRAINT `fk_ninjas_dojos`)
+mysql> DELETE * FROM dojos;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '* FROM dojos' at line 1
+mysql> DELETE FROM dojos;
+Query OK, 3 rows affected (0.00 sec)
+
+mysql> INSERT INTO dojos (name, created_at, updated_at)
+    -> VALUES ("Black and Silver Dragons", NOW(), NOW());
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO dojos (name, created_at, updated_at) VALUES ("Shaolin Monks", NOW(), NOW());
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO dojos (name, created_at, updated_at) VALUES ("White Lotus Society", NOW(), NOW());
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT id FROM dojos WHERE id = 1;
+Empty set (0.01 sec)
+
+mysql> SELECT * FROM dojos;
++----+--------------------------+---------------------+---------------------+
+| id | name                     | created_at          | updated_at          |
++----+--------------------------+---------------------+---------------------+
+|  4 | Black and Silver Dragons | 2023-10-31 15:13:38 | 2023-10-31 15:13:38 |
+|  5 | Shaolin Monks            | 2023-10-31 15:13:55 | 2023-10-31 15:13:55 |
+|  6 | White Lotus Society      | 2023-10-31 15:14:11 | 2023-10-31 15:14:11 |
++----+--------------------------+---------------------+---------------------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT id FROM dojos WHERE id = 4;
++----+
+| id |
++----+
+|  4 |
++----+
+1 row in set (0.00 sec)
+
+mysql> SELECT id FROM dojos WHERE name = 4;
+Empty set, 3 warnings (0.00 sec)
+
+mysql> SELECT name FROM dojos WHERE id = 4;
++--------------------------+
+| name                     |
++--------------------------+
+| Black and Silver Dragons |
++--------------------------+
+1 row in set (0.00 sec)
+
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at)
+    -> VALUES ('Venon' 'Blade' 33, NOW(), NOW());
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '33, NOW(), NOW())' at line 2
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at) VALUES ('Venon' 'Blade' 33, NOW(), NOW(), retrieved_dojo_id);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '33, NOW(), NOW(), retrieved_dojo_id)' at line 1
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at) VALUES ('Venon', 'Blade', 33, NOW(), NOW(), retrieved_dojo_id);
+ERROR 1136 (21S01): Column count doesn't match value count at row 1
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id) VALUES ('Venon', 'Blade', 33, NOW(), NOW(), retrieved_dojo_id);
+ERROR 1054 (42S22): Unknown column 'retrieved_dojo_id' in 'field list'
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id) VALUES ('Venon', 'Blade', 33, NOW(), NOW(), dojo_id);
+ERROR 1452 (23000): Cannot add or update a child row: a foreign key constraint fails (`dojos_and_ninjas`.`ninjas`, CONSTRAINT `fk_ninjas_dojos` FOREIGN KEY (`dojo_id`) REFERENCES `dojos` (`id`))
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id) VALUES ('Venon', 'Blade', 33, NOW(), NOW(), 4);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id) VALUES ('Shadow', 'Viper', 25, NOW(), NOW(), 4);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id) VALUES ('Frost', 'Edge', 30, NOW(), NOW(), 4);
+Query OK, 1 row affected (0.01 sec)
+
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id) VALUES ('Tempest', 'Dragon', 30, NOW(), NOW(), 5);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id) VALUES ('Stone', 'First', 40, NOW(), NOW(), 5);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id) VALUES ('Azure', 'Crane', 18, NOW(), NOW(), 5);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id) VALUES ('Lotus', 'Thunder', 99, NOW(), NOW(), 6);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id) VALUES ('Silent', 'Zephyr', 1, NOW(), NOW(), 6);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> INSERT INTO ninjas (first_name, last_name, age, created_at, updated_at, dojo_id) VALUES ('Lotus', 'Flame', 24, NOW(), NOW(), 6);
+Query OK, 1 row affected (0.00 sec)
+
+mysql> SELECT * FROM dojos WHERE id = 4;
++----+--------------------------+---------------------+---------------------+
+| id | name                     | created_at          | updated_at          |
++----+--------------------------+---------------------+---------------------+
+|  4 | Black and Silver Dragons | 2023-10-31 15:13:38 | 2023-10-31 15:13:38 |
++----+--------------------------+---------------------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM ninjas WHERE id = 4;
++----+------------+-----------+------+---------------------+---------------------+---------+
+| id | first_name | last_name | age  | created_at          | updated_at          | dojo_id |
++----+------------+-----------+------+---------------------+---------------------+---------+
+|  4 | Frost      | Edge      |   30 | 2023-10-31 15:22:17 | 2023-10-31 15:22:17 |       4 |
++----+------------+-----------+------+---------------------+---------------------+---------+
+1 row in set (0.00 sec)
+
+mysql> SELECT * FROM ninjas WHERE dojo.id = 4;
+ERROR 1054 (42S22): Unknown column 'dojo.id' in 'where clause'
+mysql> SELECT * FROM ninjas WHERE dojo_id = 4;
++----+------------+-----------+------+---------------------+---------------------+---------+
+| id | first_name | last_name | age  | created_at          | updated_at          | dojo_id |
++----+------------+-----------+------+---------------------+---------------------+---------+
+|  2 | Venon      | Blade     |   33 | 2023-10-31 15:21:30 | 2023-10-31 15:21:30 |       4 |
+|  3 | Shadow     | Viper     |   25 | 2023-10-31 15:22:06 | 2023-10-31 15:22:06 |       4 |
+|  4 | Frost      | Edge      |   30 | 2023-10-31 15:22:17 | 2023-10-31 15:22:17 |       4 |
++----+------------+-----------+------+---------------------+---------------------+---------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT * FROM ninjas WHERE dojo_id = 5;
++----+------------+-----------+------+---------------------+---------------------+---------+
+| id | first_name | last_name | age  | created_at          | updated_at          | dojo_id |
++----+------------+-----------+------+---------------------+---------------------+---------+
+|  5 | Tempest    | Dragon    |   30 | 2023-10-31 15:23:04 | 2023-10-31 15:23:04 |       5 |
+|  6 | Stone      | First     |   40 | 2023-10-31 15:23:16 | 2023-10-31 15:23:16 |       5 |
+|  7 | Azure      | Crane     |   18 | 2023-10-31 15:23:29 | 2023-10-31 15:23:29 |       5 |
++----+------------+-----------+------+---------------------+---------------------+---------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT * FROM ninjas WHERE dojo_id = 6;
++----+------------+-----------+------+---------------------+---------------------+---------+
+| id | first_name | last_name | age  | created_at          | updated_at          | dojo_id |
++----+------------+-----------+------+---------------------+---------------------+---------+
+|  8 | Lotus      | Thunder   |   99 | 2023-10-31 15:24:15 | 2023-10-31 15:24:15 |       6 |
+|  9 | Silent     | Zephyr    |    1 | 2023-10-31 15:24:33 | 2023-10-31 15:24:33 |       6 |
+| 10 | Lotus      | Flame     |   24 | 2023-10-31 15:24:46 | 2023-10-31 15:24:46 |       6 |
++----+------------+-----------+------+---------------------+---------------------+---------+
+3 rows in set (0.00 sec)
+
+mysql> SELECT * FROM dojos WHERE ninja.id = 10;
+ERROR 1054 (42S22): Unknown column 'ninja.id' in 'where clause'
+mysql> SELECT dojo_id FROM ninjas
+    -> ORDER BY id DESC
+    -> LIMIT 1;
++---------+
+| dojo_id |
++---------+
+|       6 |
++---------+
+1 row in set (0.01 sec)
+
+mysql> SELECT * FROM dojos
+    -> WHERE id = (SELECT dojo_id FROM ninjas ORDER BY id DESC LIMIT 1);
++----+---------------------+---------------------+---------------------+
+| id | name                | created_at          | updated_at          |
++----+---------------------+---------------------+---------------------+
+|  6 | White Lotus Society | 2023-10-31 15:14:11 | 2023-10-31 15:14:11 |
++----+---------------------+---------------------+---------------------+
+1 row in set (0.00 sec)
+
+mysql> SELECT dojo.name FROM dojos JOIN ON ninjas.id where ninjas.id = dojos.id;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'ON ninjas.id where ninjas.id = dojos.id' at line 1
+mysql> SELECT dojo.name FROM dojos JOIN ninjas.id ON ninjas.id = dojos.id;
+ERROR 1049 (42000): Unknown database 'ninjas'
+mysql> SELECT * FROM ninjas
+    -> ;
++----+------------+-----------+------+---------------------+---------------------+---------+
+| id | first_name | last_name | age  | created_at          | updated_at          | dojo_id |
++----+------------+-----------+------+---------------------+---------------------+---------+
+|  2 | Venon      | Blade     |   33 | 2023-10-31 15:21:30 | 2023-10-31 15:21:30 |       4 |
+|  3 | Shadow     | Viper     |   25 | 2023-10-31 15:22:06 | 2023-10-31 15:22:06 |       4 |
+|  4 | Frost      | Edge      |   30 | 2023-10-31 15:22:17 | 2023-10-31 15:22:17 |       4 |
+|  5 | Tempest    | Dragon    |   30 | 2023-10-31 15:23:04 | 2023-10-31 15:23:04 |       5 |
+|  6 | Stone      | First     |   40 | 2023-10-31 15:23:16 | 2023-10-31 15:23:16 |       5 |
+|  7 | Azure      | Crane     |   18 | 2023-10-31 15:23:29 | 2023-10-31 15:23:29 |       5 |
+|  8 | Lotus      | Thunder   |   99 | 2023-10-31 15:24:15 | 2023-10-31 15:24:15 |       6 |
+|  9 | Silent     | Zephyr    |    1 | 2023-10-31 15:24:33 | 2023-10-31 15:24:33 |       6 |
+| 10 | Lotus      | Flame     |   24 | 2023-10-31 15:24:46 | 2023-10-31 15:24:46 |       6 |
++----+------------+-----------+------+---------------------+---------------------+---------+
+9 rows in set (0.00 sec)
+
+mysql> SELECT dojo.name FROM dojos JOIN ninjas.id ON dojo_id = dojos.id;
+ERROR 1049 (42000): Unknown database 'ninjas'
+mysql> SELECT dojos.name
+    -> FROM dojos
+    -> JOIN ninjas ON dojos.id = ninjas.dojo_id;
++--------------------------+
+| name                     |
++--------------------------+
+| Black and Silver Dragons |
+| Black and Silver Dragons |
+| Black and Silver Dragons |
+| Shaolin Monks            |
+| Shaolin Monks            |
+| Shaolin Monks            |
+| White Lotus Society      |
+| White Lotus Society      |
+| White Lotus Society      |
++--------------------------+
+9 rows in set (0.00 sec)
+
+mysql> 
+mysql> SELECT * FROM dojos
+    -> JOIN ninjas ON dojos.id = ninjas.dojo_id;
++----+--------------------------+---------------------+---------------------+----+------------+-----------+------+---------------------+---------------------+---------+
+| id | name                     | created_at          | updated_at          | id | first_name | last_name | age  | created_at          | updated_at          | dojo_id |
++----+--------------------------+---------------------+---------------------+----+------------+-----------+------+---------------------+---------------------+---------+
+|  4 | Black and Silver Dragons | 2023-10-31 15:13:38 | 2023-10-31 15:13:38 |  2 | Venon      | Blade     |   33 | 2023-10-31 15:21:30 | 2023-10-31 15:21:30 |       4 |
+|  4 | Black and Silver Dragons | 2023-10-31 15:13:38 | 2023-10-31 15:13:38 |  3 | Shadow     | Viper     |   25 | 2023-10-31 15:22:06 | 2023-10-31 15:22:06 |       4 |
+|  4 | Black and Silver Dragons | 2023-10-31 15:13:38 | 2023-10-31 15:13:38 |  4 | Frost      | Edge      |   30 | 2023-10-31 15:22:17 | 2023-10-31 15:22:17 |       4 |
+|  5 | Shaolin Monks            | 2023-10-31 15:13:55 | 2023-10-31 15:13:55 |  5 | Tempest    | Dragon    |   30 | 2023-10-31 15:23:04 | 2023-10-31 15:23:04 |       5 |
+|  5 | Shaolin Monks            | 2023-10-31 15:13:55 | 2023-10-31 15:13:55 |  6 | Stone      | First     |   40 | 2023-10-31 15:23:16 | 2023-10-31 15:23:16 |       5 |
+|  5 | Shaolin Monks            | 2023-10-31 15:13:55 | 2023-10-31 15:13:55 |  7 | Azure      | Crane     |   18 | 2023-10-31 15:23:29 | 2023-10-31 15:23:29 |       5 |
+|  6 | White Lotus Society      | 2023-10-31 15:14:11 | 2023-10-31 15:14:11 |  8 | Lotus      | Thunder   |   99 | 2023-10-31 15:24:15 | 2023-10-31 15:24:15 |       6 |
+|  6 | White Lotus Society      | 2023-10-31 15:14:11 | 2023-10-31 15:14:11 |  9 | Silent     | Zephyr    |    1 | 2023-10-31 15:24:33 | 2023-10-31 15:24:33 |       6 |
+|  6 | White Lotus Society      | 2023-10-31 15:14:11 | 2023-10-31 15:14:11 | 10 | Lotus      | Flame     |   24 | 2023-10-31 15:24:46 | 2023-10-31 15:24:46 |       6 |
++----+--------------------------+---------------------+---------------------+----+------------+-----------+------+---------------------+---------------------+---------+
+9 rows in set (0.00 sec)
+
+mysql> SELECT dojos.name
+    -> JOIN ninjas WHERE id = 6 ON dojos.id = ninjas.dojo_id;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'JOIN ninjas WHERE id = 6 ON dojos.id = ninjas.dojo_id' at line 2
+mysql> SELECT dojos.name
+    -> FROM dojos
+    -> JOIN ninjas ON dojos.id = ninjas.dojo_id
+    -> WHERE ninjas.id = 6;
++---------------+
+| name          |
++---------------+
+| Shaolin Monks |
++---------------+
+1 row in set (0.01 sec)
+
+mysql> SELECT dojos.name AS dojo_name , ninjas.first_name, ninjas.last_name, ninjas.age
+    -> FROM dojos
+    -> JOIN ninjas ON dojos.id = ninjas.dojo_id
+    -> WHERE ninjas.id = 6;
++---------------+------------+-----------+------+
+| dojo_name     | first_name | last_name | age  |
++---------------+------------+-----------+------+
+| Shaolin Monks | Stone      | First     |   40 |
++---------------+------------+-----------+------+
+1 row in set (0.00 sec)
+
+mysql> notee
+mysql> notee
