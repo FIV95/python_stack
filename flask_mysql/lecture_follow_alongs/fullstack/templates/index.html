@@ -1,0 +1,48 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="/static/css/style.css">
+            <title>Full Stack!</title>
+      </head>
+      <body>
+            <h1>Hello!</h1>
+            <a href="/new">Register User</a>
+            <h2>Here's the users:</h2>
+
+            <table>
+                  <caption>User Table</caption>
+                  <thead>
+                        <tr>
+                              <th>Select:</th>
+                              <th>Name:</th>
+                              <th>Phone:</th>
+                              <th>Email:</th>
+                              <th>Edit:</th>
+                              <th>Delete:</th>
+                        </tr>
+                  </thead>
+                  <tbody>
+                        {% for user in users %}
+                        <tr>
+                              <td><input type="radio" name="userSelection" value="1"></td>
+                              <td>{{user.name}}</td>
+                              <td>{{user.phone}}</td>
+                              <td>{{user.email}}</td>
+                              <td><form action="/edit/{{user.id}}" method="POST">
+                                    <button type="submit">EDIT</button>
+                              </form></td>
+                              <td>
+                                    <form action="/delete/{{user.id}}">
+                                          <input type="hidden" name="user_id" value="{{ user.id }}">
+                                          <button type="submit" name="delete_button" value="{{ user.id}}">X</button>
+                                    </form>
+                              </td>
+                        </tr>
+                        {% endfor %}
+                  </tbody>
+
+            </table>
+      </body>
+      </html>

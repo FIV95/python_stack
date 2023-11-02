@@ -1,0 +1,12 @@
+[
+      {'id': 1, 'name': 'John Doe', 'phone': '123-456-7890', 'email': 'john.doe@example.com', 'created_at': datetime.datetime(2023, 11, 1, 15, 7, 3), 'updated_at': datetime.datetime(2023, 11, 1, 15, 7, 3)},
+
+      {'id': 2, 'name': 'Alice Smith', 'phone': '987-654-3210', 'email': 'alice.smith@example.com', 'created_at': datetime.datetime(2023, 11, 1, 15, 7, 3), 'updated_at': datetime.datetime(2023, 11, 1, 15, 7, 3)},
+
+      {'id': 3, 'name': 'Bob Johnson', 'phone': '555-123-4567', 'email': 'bob.johnson@example.com', 'created_at': datetime.datetime(2023, 11, 1, 15, 7, 3), 'updated_at': datetime.datetime(2023, 11, 1, 15, 7, 3)},
+
+      {'id': 4, 'name': 'Jane Smith', 'phone': '555-555-5555', 'email': 'jane.smith@example.com', 'created_at': datetime.datetime(2023, 11, 1, 15, 7, 9), 'updated_at': datetime.datetime(2023, 11, 1, 15, 7, 9)},
+
+      {'id': 5, 'name': 'Michael Johnson', 'phone': '999-888-7777', 'email': 'michael.johnson@example.com', 'created_at': datetime.datetime(2023, 11, 1, 15, 7, 9), 'updated_at': datetime.datetime(2023, 11, 1, 15, 7, 9)}
+
+      ]
