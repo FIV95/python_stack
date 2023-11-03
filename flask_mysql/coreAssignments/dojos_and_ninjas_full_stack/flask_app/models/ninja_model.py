@@ -75,17 +75,19 @@ class Ninja:
             connectToMySQL("dojos_and_ninjas").query_db(query,data)
 
       @classmethod
-      def select(cls,form):
+      def select(cls,dojo_id):
+
+            data = {"dojo_id": dojo_id}
 
             query = """
 
             SELECT * FROM ninjas
             JOIN dojos
             ON dojos.id = ninjas.dojo_id
-            WHERE ninjas.dojo_id
+            WHERE ninjas.dojo_id = %(dojo_id)s
 
             """
-            results = connectToMySQL("dojos_and_ninjas").query_db(query,form)
+            results = connectToMySQL("dojos_and_ninjas").query_db(query, data)
 
             all_ninjas = []
             for ninja in results:
