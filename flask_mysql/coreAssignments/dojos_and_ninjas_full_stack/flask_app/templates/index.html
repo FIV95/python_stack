@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="/static/css/style.css" />
+		<title>Welcome Ninjas</title>
+	</head>
+	<body>
+		<h1>Welcome Ninjas!</h1>
+		<h2>New to our system?</h2>
+		<h3>Register here</h3>
+		<form action="/ninjaregistration">
+				<button type="submit">Ninja Registration</button>
+		</form>
+		<h2>Join one of our many Dojos Today!</h2>
+
+		<table>
+			<caption>
+				Dojos
+			</caption>
+			<thead>
+				<tr>
+                              <!-- <th>Number of Ninjas</th> -->
+					<th>Name:</th>
+					<th>Fighting Speciality</th>
+					<th>Founded:</th>
+                              <th>View Members</th>
+				</tr>
+			</thead>
+			<tbody>
+				{% for dojo in dojos %}
+				<tr>
+					<td>{{ dojo.name}}</td>
+					<td>{{ dojo.fighting_speciality}}</td>
+					<td>{{ dojo.founded.strftime('%Y-%m-%d') }}</td>
+                              <td><a href='/dojocontents/{{dojo.id}}'><button>members</button></a></td>
+				</tr>
+                        {% endfor %}
+			</tbody>
+		</table>
+            <h1>Wish to form your own Dojo and lead fellow ninjas?</h1>
+            <h2>Create your own Dojo here!</h2>
+            <form action="/newdojo">
+			<button type="submit">Dojo Registration</button>
+		</form>
+
+	</body>
+</html>
