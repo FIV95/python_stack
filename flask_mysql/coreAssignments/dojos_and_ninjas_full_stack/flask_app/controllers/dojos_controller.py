@@ -7,7 +7,7 @@ from flask_app.models.dojo_model import Dojo
 @app.route('/')
 def index():
       dojos = Dojo.get_all()
-      return render_template ('index.html', dojos=dojos, dojo_id = Dojo.get_one(id))
+      return render_template ('index.html', dojos=dojos)
 
 @app.route('/newdojo')
 def newdojo():

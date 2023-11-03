@@ -19,8 +19,7 @@ def ninjacreation():
 
 @app.route('/dojocontents/<int:id>')
 def dojoinfo(id):
-      Dojo.get_one(id)
-      Ninja.select()
+      Ninja.get_all()
       return render_template('dojocontents.html', dojo=Dojo.get_one(id))
 
 

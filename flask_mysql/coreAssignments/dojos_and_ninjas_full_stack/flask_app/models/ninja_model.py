@@ -82,7 +82,7 @@ class Ninja:
             SELECT * FROM ninjas
             JOIN dojos
             ON dojos.id = ninjas.dojo_id
-            WHERE ninjas.id = %(id)s
+            WHERE ninjas.dojo_id
 
             """
             results = connectToMySQL("dojos_and_ninjas").query_db(query,form)
