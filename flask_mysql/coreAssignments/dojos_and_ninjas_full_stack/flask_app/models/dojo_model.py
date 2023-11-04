@@ -11,9 +11,7 @@ class Dojo:
       def get_all(cls):
 
             query = """
-
             SELECT * FROM dojos;
-
             """
             results = connectToMySQL('dojos_and_ninjas').query_db(query)
             all_dojos = []
@@ -33,7 +31,7 @@ class Dojo:
             WHERE id = %(id)s
             """
 
-            results = connectToMySQL("dojos_and_ninjas").query_db(query)
+            results = connectToMySQL("dojos_and_ninjas").query_db(query, data)
             if results:
                   new_user = cls(results[0])
                   return new_user

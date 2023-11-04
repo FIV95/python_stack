@@ -21,9 +21,16 @@ def ninjacreation():
 
 @app.route("/dojocontents/<int:dojo_id>/members")
 def dojo_members(dojo_id):
-      dojo = Dojo.get_one(dojo_id)
-      ninjas = Ninja.select(dojo_id)
-      return render_template("dojocontents.html", ninjas=ninjas, dojo=Dojo.get_one(dojo_id))
+    # Fetch the dojo object using Dojo.get_one
+    dojo = Dojo.get_one(dojo_id)
+
+    # Fetch the ninjas associated with the dojo
+    ninjas = Ninja.select(dojo_id)
+
+    # Pass both ninjas and dojo objects to the HTML template
+    return render_template("dojocontents.html", ninjas=ninjas, dojo=dojo)
+
+
 
 
 # @app.route('/takedojoinfo', methods=["POST"])

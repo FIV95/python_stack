@@ -1,0 +1,35 @@
+      <!DOCTYPE html>
+      <html lang="en">
+      <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="/static/css/style.css">
+            <title>Results</title>
+      </head>
+      <body>
+            <div class="main">
+                  <div class="form">
+                        <table>
+                              <tr>
+                                    <th>Name:</th>
+                                    <th>Is Cool:</th>
+                                    <th>Location:</th>
+                                    <th>Favorite Language:</th>
+                                    <th>is leet?</th>
+                              </tr>
+                              <tr>
+                                    <td>{{results.name}}</td>
+                                    {% if results.coolcheck == 1 %}
+                                    <td><img src="https://menprovement.com/wp-content/uploads/2014/10/how-not-to-be-a-cool-guy.jpg" style="width: 50px;" alt=""> Is Cool</td>
+                                    {% else %}
+                                    <td>Not Cool</td>
+                                    {% endif %}
+                                    <td>{{results.location}}</td>
+                                    <td>{{results.language_choice}}</td>
+                                    <td>{{results.leetcheck}}</td>
+                              </tr>
+                        </table>
+                  </div>
+            </div>
+      </body>
+      </html>
