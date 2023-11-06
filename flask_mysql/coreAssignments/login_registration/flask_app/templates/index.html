@@ -44,7 +44,7 @@
 								>First Name:</label
 							>
 							<div class="col-sm-9">
-                <input type="text" name="first_name" class="form-control" value="{{form_data.get('first_name')}}">
+                <input type="text" name="first_name" class="form-control" value="{{ form_data.get('first_name', '') }}">
                 {% for message in get_flashed_messages(category_filter=['fname_err'])%}
                 <p class="invalid-feedback">{{ message}}</p>
                 {% endfor %}
@@ -56,7 +56,7 @@
 								>Last Name:</label
 							>
 							<div class="col-sm-9">
-								<input type="text" name="last_name" class="form-control" value="{{form_data.get('last_name')}}">
+								<input type="text" name="last_name" class="form-control" value="{{ form_data.get('last_name', '') }}">
                 {% for message in get_flashed_messages(category_filter=['lname_err'])%}
                 <p class="invalid-feedback">{{message}}</p>
                 {% endfor %}
@@ -68,7 +68,7 @@
 								>Date of Birth:</label
 							>
 							<div class="col-sm-9">
-								<input type="date" name="dob" class="form-control" value="{{form_data.get('dob')}}">
+								<input type="date" name="dob" class="form-control" value="{{ form_data.get('dob', '') }}">
                 {% for message in get_flashed_messages(category_filter=['dob_err'])%}
                 <p class="text-danger">{{message}}</p>
                 {% endfor %}
@@ -78,7 +78,7 @@
 						<div class="form-group row mb-5">
 							<label for="email" class="col-sm-3 col-form-label">Email:</label>
 							<div class="col-sm-9">
-                <input type="text" name="email" class="form-control" value="{{form_data.get('email')}}">
+                <input type="text" name="email" class="form-control" value="{{ form_data.get('email', '') }}">
 
                 {% for message in get_flashed_messages(category_filter=['email_err'])%}
                 <p class="text-danger">{{message}}</p>

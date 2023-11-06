@@ -4,7 +4,9 @@ from flask_app.models.user_model import User
 
 @app.route('/')
 def main():
-      return render_template('index.html')
+    form_data = session.get('form_data', {})  # Get the form data from the session
+    return render_template('index.html', form_data=form_data)
+
 
 @app.route('/register', methods=['POST', 'GET'])
 def registration_attempt():
@@ -22,7 +24,8 @@ def registration_attempt():
 
 @app.route('/regsuccess')
 def registration_success():
-   return  render_template('regsuccess.html')
+    session.pop('form_data', None)
+    return  render_template('regsuccess.html')
 
 @app.route('/validate', methods=['POST'])
 def login_attempt():
@@ -32,6 +35,7 @@ def login_attempt():
     user = User.select_by_email(l_email)
     if user and User.login(l_email, l_password):
         session['user_id'] = user.id
+        session.pop('form_data', None)
         return redirect('/dashboard')
     else:
         session.pop('user_id', None)
@@ -45,5 +49,7 @@ def dashboard():
 
 @app.route ('/logout')
 def logout():
+
+    session.pop('user_id', None)
     return redirect('/')
 
