@@ -9,8 +9,6 @@ PASSWORD_REGEX = re.compile(r'^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$ 
 # Initialize Bcrypt
 bcrypt = Bcrypt()
 
-db = 'db'
-
 class User:
     def __init__(self, data):
         self.id = data['id']
@@ -19,8 +17,6 @@ class User:
         self.dob = data['dob']
         self.email = data['email']
         self.passwordhash = data['passwordhash']
-        self.salt = data['salt']  # Include salt if needed
-        self.salted_password = data['salted_password']
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
 
@@ -50,6 +46,10 @@ class User:
               flash('***Minimum eight characters, at least one upper case English letter, one lower case English letter, one number and one special character***', 'pass_err')
               is_valid = False
 
+        if User.select_by_email(user_data['email']):
+            flash('A user has already registered with that email address', 'email_dup')
+            is_valid = False
+
         password = user_data.get('password')
         cpassword = user_data.get('c_password')
         if password != cpassword:
@@ -65,14 +65,11 @@ class User:
 
         query = """
         INSERT INTO users
-        (first_name, last_name, dob, email, passwordhash, salt, created_at, updated_at)
+        (first_name, last_name, dob, email, passwordhash, created_at, updated_at)
         VALUES
-        (%(first_name)s, %(last_name)s, %(dob)s, %(email)s, %(passwordhash)s, %(salt)s %(salted_password)s, NOW(), NOW())
+        (%(first_name)s, %(last_name)s, %(dob)s, %(email)s, %(passwordhash)s, NOW(), NOW())
         """
 
-        # Generate a random salt
-        salt = ''.join(random.choices(string.ascii_letters + string.digits, k=16))
-        salted_password = hashed_password + salt
 
         data = {
             'first_name': form['first_name'],
@@ -80,13 +77,87 @@ class User:
             'dob': form['dob'],
             'email': form['email'],
             'passwordhash': hashed_password,
-            'salt': salt,  # Include the generated salt
-            'salted_password': salted_password
         }
 
+
         try:
-            id_of_created_entry = connectToMySQL('db').query_db(query, data)
+            id_of_created_entry = connectToMySQL('logintests').query_db(query, data)
             return id_of_created_entry
         except Exception as e:
             flash('An error occurred while creating the user', 'error')
             return None
+
+    @classmethod
+    def select_by_email(cls, email):
+
+        data = {"email": email}
+        query = """
+
+        SELECT * FROM  users
+        WHERE email = %(email)s
+        """
+
+        results = connectToMySQL('logintests').query_db(query, data)
+        if results:
+            return cls(results[0])
+        else:
+            return False
+
+    @classmethod
+    def select_id_by_email(cls, l_email):
+
+        data = {"l_email": l_email}
+
+        query = """
+
+        SELECT * FROM users
+        WHERE EMAIL = %(l_email)s
+
+        """
+        results = connectToMySQL('logintests').query_db(query, data)
+        if results:
+            return (results[0]['id'])
+        else:
+            return None
+
+
+    @classmethod
+    def login(cls, l_email, l_password):
+        is_valid = True
+        found_user = cls.select_by_email(l_email)
+        if found_user:
+            user_details = found_user.as_dict()
+            print('\n\n\n ---------->user_details=', user_details)
+            stored_hashed_password = user_details.get('passwordhash')
+            print('\n\n\n ------->stored_hashed_password =', stored_hashed_password, '\n')
+            print('\n\n\n ------->l_password =', l_password, '\n')
+            if bcrypt.check_password_hash(stored_hashed_password, l_password):
+                print('\n ----------> IT WAS A MATCH!!!!!!!!!!!!!!!!!!\n\n\n')
+                return True
+            else:
+                print('Incorrect password')
+                flash('Incorrect Password, Please try again', 'inc_pw')
+                return False
+        else:
+            print(f'User with email {l_email} not found in the database')
+            flash('No user with email {l_email} was not found.','login_err' )
+            is_valid = False
+
+        return is_valid
+
+
+
+
+
+    def as_dict(self):
+        return {
+            'id': self.id,
+            'first_name': self.first_name,
+            'last_name': self.last_name,
+            'dob': self.dob,
+            'email': self.email,
+            'passwordhash': self.passwordhash,
+            'created_at': self.created_at,
+            'updated_at': self.updated_at
+
+        }
