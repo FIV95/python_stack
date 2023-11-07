@@ -1,5 +1,6 @@
 from flask_app.config.mysqlconnection import connectToMySQL
 from flask import flash
+from flask_app.models.post_model import Post
 import re
 import random, string
 from flask_bcrypt import Bcrypt
@@ -19,6 +20,8 @@ class User:
         self.passwordhash = data['passwordhash']
         self.created_at = data['created_at']
         self.updated_at = data['updated_at']
+        self.posts = []
+
 
     @staticmethod
     def validate(user_data):
@@ -28,6 +31,16 @@ class User:
 
         if len(user_data['first_name']) < 2 or len(user_data['first_name']) > 255:
             flash('Min # of Chars: 2, Max # of Chars: 255', 'fname_err')
+            is_valid = False
+
+        fnamevalue = user_data.get('first_name')
+        if not fnamevalue:
+            flash ('Please Enter a First Name', 'nofname_err')
+            is_valid = False
+
+        lnamevalue = user_data.get('last_name')
+        if not lnamevalue:
+            flash ('Please Enter a Last Name', 'nolname_err')
             is_valid = False
 
         if len(user_data['last_name']) < 2 or len(user_data['last_name']) > 255:
@@ -146,9 +159,6 @@ class User:
         return is_valid
 
 
-
-
-
     def as_dict(self):
         return {
             'id': self.id,
@@ -159,5 +169,18 @@ class User:
             'passwordhash': self.passwordhash,
             'created_at': self.created_at,
             'updated_at': self.updated_at
-
         }
+
+    @classmethod
+    def get_by_id(cls, user_id):
+        query = "SELECT * FROM users WHERE id = %(user_id)s"
+        data = {"user_id": user_id}
+
+        result = connectToMySQL('logintests').query_db(query, data)
+        if result:
+            return cls(result[0])  # Assuming it returns a single user
+        else:
+            return None  # User not found
+
+    # ... (other class methods)
+

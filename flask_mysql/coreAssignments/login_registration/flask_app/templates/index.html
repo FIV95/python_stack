@@ -13,7 +13,7 @@
 	</head>
 	<body>
 		<nav class="navbar navbar-expand-lg mt-3 mb-3 mx-5">
-			<a class="navbar-brand" href="#">Test Login & Registration</a>
+			<a class="navbar-brand" href="/">Test Login & Registration</a>
 			<button
 				class="navbar-toggler"
 				type="button"
@@ -26,6 +26,11 @@
 				<ul class="navbar-nav">
 					<li class="nav-item">
 						<a class="nav-link" href="/">Home</a>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="/dashboard/{{ user_id }}">Dashboard</a>
+
 					</li>
 
 					<li class="nav-item">
@@ -44,10 +49,18 @@
 								>First Name:</label
 							>
 							<div class="col-sm-9">
-                <input type="text" name="first_name" class="form-control" value="{{ form_data.get('first_name', '') }}">
-                {% for message in get_flashed_messages(category_filter=['fname_err'])%}
-                <p class="invalid-feedback">{{ message}}</p>
-                {% endfor %}
+								<input
+									type="text"
+									name="first_name"
+									class="form-control"
+									value="{{ form_data.get('first_name', '') }}"
+								/>
+								{% for message in get_flashed_messages(category_filter=['fname_err'])%}
+								<p class="invalid-feedback">{{ message}}</p>
+								{% endfor %}
+								 {% for message in get_flashed_messages(category_filter=['nofname_er'])%}
+								<p class="invalid-feedback">{{ message}}</p>
+								{% endfor %}
 							</div>
 						</div>
 
@@ -56,10 +69,19 @@
 								>Last Name:</label
 							>
 							<div class="col-sm-9">
-								<input type="text" name="last_name" class="form-control" value="{{ form_data.get('last_name', '') }}">
-                {% for message in get_flashed_messages(category_filter=['lname_err'])%}
-                <p class="invalid-feedback">{{message}}</p>
-                {% endfor %}
+								<input
+									type="text"
+									name="last_name"
+									class="form-control"
+									value="{{ form_data.get('last_name', '') }}"
+								/>
+								{% for message in
+								get_flashed_messages(category_filter=['lname_err'])%}
+								<p class="invalid-feedback">{{message}}</p>
+								{% endfor %} {% for message in
+								get_flashed_messages(category_filter=['nolname_err'])%}
+								<p class="invalid-feedback">{{ message}}</p>
+								{% endfor %}
 							</div>
 						</div>
 
@@ -68,21 +90,36 @@
 								>Date of Birth:</label
 							>
 							<div class="col-sm-9">
-								<input type="date" name="dob" class="form-control" value="{{ form_data.get('dob', '') }}">
-                {% for message in get_flashed_messages(category_filter=['dob_err'])%}
-                <p class="text-danger">{{message}}</p>
-                {% endfor %}
+								<input
+									type="date"
+									name="dob"
+									class="form-control"
+									min="1912-01-01"
+									max="2005-01-01"
+									value="{{ form_data.get('dob', '') }}"
+									min="2017-04-01"
+								/>
+								{% for message in
+								get_flashed_messages(category_filter=['dob_err'])%}
+								<p class="text-danger">{{message}}</p>
+								{% endfor %}
 							</div>
 						</div>
 
 						<div class="form-group row mb-5">
 							<label for="email" class="col-sm-3 col-form-label">Email:</label>
 							<div class="col-sm-9">
-                <input type="text" name="email" class="form-control" value="{{ form_data.get('email', '') }}">
+								<input
+									type="text"
+									name="email"
+									class="form-control"
+									value="{{ form_data.get('email', '') }}"
+								/>
 
-                {% for message in get_flashed_messages(category_filter=['email_err'])%}
-                <p class="text-danger">{{message}}</p>
-                {% endfor %}
+								{% for message in
+								get_flashed_messages(category_filter=['email_err'])%}
+								<p class="text-danger">{{message}}</p>
+								{% endfor %}
 							</div>
 						</div>
 
@@ -92,12 +129,12 @@
 							>
 							<div class="col-sm-9">
 								<input type="password" name="password" class="form-control" />
-                {% for message in get_flashed_messages(category_filter=['pass_err'])%}
-                <p class="text-danger">{{message}}</p>
-                {% endfor %}
+								{% for message in
+								get_flashed_messages(category_filter=['pass_err'])%}
+								<p class="text-danger">{{message}}</p>
+								{% endfor %}
 							</div>
 						</div>
-
 
 						<div class="form-group row">
 							<label for="c_password" class="col-sm-3 col-form-label"
@@ -105,18 +142,19 @@
 							>
 							<div class="col-sm-9">
 								<input type="password" name="c_password" class="form-control" />
-                {% for message in get_flashed_messages(category_filter=['match_err'])%}
-                <p class="text-danger">{{message}}</p>
-                {% endfor %}
+								{% for message in
+								get_flashed_messages(category_filter=['match_err'])%}
+								<p class="text-danger">{{message}}</p>
+								{% endfor %}
 							</div>
 						</div>
 
 						<div class="form-group row">
 							<div class="col-sm-9 offset-sm-3">
 								<button type="submit" class="btn btn-primary">Register</button>
-								{% for message in get_flashed_messages(category_filter=['email_dup'])%}
-								<p class="text-danger">{{message}}
-									{% endfor %}
+								{% for message in
+								get_flashed_messages(category_filter=['email_dup'])%}
+								<p class="text-danger">{{message}} {% endfor %}</p>
 							</div>
 						</div>
 					</form>
@@ -128,7 +166,8 @@
 						<div class="form-group mb-3">
 							<label for="l_email">Email:</label>
 							<input type="text" name="l_email" class="form-control" />
-							{% for message in get_flashed_messages(category_filter=['login-err'])%}
+							{% for message in
+							get_flashed_messages(category_filter=['login-err'])%}
 							<p class="text-danger">{{message}}</p>
 							{% endfor %}
 						</div>
@@ -136,7 +175,8 @@
 						<div class="form-group mb-3">
 							<label for="l_password">Password</label>
 							<input type="password" name="l_password" class="form-control" />
-							{% for message in get_flashed_messages(category_filter=['inc_pw'])%}
+							{% for message in
+							get_flashed_messages(category_filter=['inc_pw'])%}
 							<p class="text-danger">{{message}}</p>
 							{% endfor %}
 						</div>

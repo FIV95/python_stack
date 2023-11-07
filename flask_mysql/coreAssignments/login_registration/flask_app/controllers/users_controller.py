@@ -1,6 +1,7 @@
 from flask import render_template, request, redirect, session
 from flask_app import app
 from flask_app.models.user_model import User
+from flask_app.models.post_model import Post
 
 @app.route('/')
 def main():
@@ -36,16 +37,20 @@ def login_attempt():
     if user and User.login(l_email, l_password):
         session['user_id'] = user.id
         session.pop('form_data', None)
-        return redirect('/dashboard')
+        return redirect(f'/dashboard/{user.id}')
     else:
         session.pop('user_id', None)
         return redirect('/')
 
-@app.route ('/dashboard')
-def dashboard():
+@app.route ('/dashboard/<int:user_id>')
+def dashboard(user_id):
+    user_id = session.get('user_id')
+    print('\n\n\n user_id ----------->', user_id, '\n\n\n')
     if not 'user_id' in session:
         return redirect('/')
-    return render_template('dashboard.html')
+    posts = Post.get_posts_with_authors()
+    print('\n\n\n post-------->>', posts[0].user.first_name, '\n\n\n')
+    return render_template('dashboard.html', posts=posts, user_id = user_id)
 
 @app.route ('/logout')
 def logout():
