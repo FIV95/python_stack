@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<title>Login & Registration</title>
+	</head>
+	<body>
+		<nav class="navbar navbar-expand-lg mt-3 mb-3 mx-5">
+			<a class="navbar-brand" href="/">Recipe World</a>
+			<button
+				class="navbar-toggler"
+				type="button"
+				data-toggle="collapse"
+				data-target="#navbarNav"
+			>
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarNav">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link" href="/recipeworld/recipedashboard"
+							>Dashboard</a
+						>
+					</li>
+
+					<li class="nav-item">
+						<a
+							class="nav-link"
+							href="/recipeworld/recipedashboard/{{user_id}}/favorites"
+							>Favorites</a
+						>
+					</li>
+
+					<li class="nav-item">
+						<a class="nav-link" href="/logout">Log Out</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<div class="container">
+			<div class="row">
+				<div class="col-md-5 mb-5">
+					<h2>Registration</h2>
+					<form method="post" action="/register" name="registrationform">
+						<div class="form-group row mb-3">
+							<label for="first_name" class="col-sm-3 col-form-label"
+								>First Name:</label
+							>
+							<div class="col-sm-9">
+								<input
+									type="text"
+									name="first_name"
+									class="form-control"
+									value="{{ session['form_data']['first_name'] }}"
+								/>
+								{% for message in
+								get_flashed_messages(category_filter=['fname_err'])%}
+								<p class="text-danger">{{message}}</p>
+								{% endfor %} {% for message in
+								get_flashed_messages(category_filter=['no_fname_err'])%}
+								<p class="text-danger">{{message}}</p>
+								{% endfor %}
+							</div>
+						</div>
+
+						<div class="form-group row mb-3">
+							<label for="last_name" class="col-sm-3 col-form-label"
+								>Last Name:</label
+							>
+							<div class="col-sm-9">
+								<input
+									type="text"
+									name="last_name"
+									class="form-control"
+									value="{{ session['form_data']['last_name'] }}"
+								/>
+								{% for message in
+									get_flashed_messages(category_filter=['lname_err'])%}
+									<p class="text-danger">{{message}}</p>
+									{% endfor %} 								{% for message in
+										get_flashed_messages(category_filter=['no_lname_err'])%}
+										<p class="text-danger">{{message}}</p>
+										{% endfor %}
+							</div>
+						</div>
+
+						<div class="form-group row mb-3">
+							<label for="dob" class="col-sm-3 col-form-label"
+								>Date of Birth:</label
+							>
+							<div class="col-sm-9">
+								<input
+									type="date"
+									name="dob"
+									class="form-control"
+									min="1912-01-01"
+									max="2005-01-01"
+									value="{{ session['form_data']['dob'] }}"
+								/>
+								{% for message in
+								get_flashed_messages(category_filter=['dob_err'])%}
+								<p class="text-danger">{{message}}</p>
+								{% endfor %}
+							</div>
+						</div>
+
+						<div class="form-group row mb-5">
+							<label for="email" class="col-sm-3 col-form-label">Email:</label>
+							<div class="col-sm-9">
+								<input
+									type="text"
+									name="email"
+									class="form-control"
+									value="{{ session['form_data']['email'] }}"
+								/>
+
+								{% for message in
+								get_flashed_messages(category_filter=['email_err'])%}
+								<p class="text-danger">{{message}}</p>
+								{% endfor %}
+							</div>
+						</div>
+
+						<div class="form-group row mb-3">
+							<label for="password" class="col-sm-3 col-form-label"
+								>Password</label
+							>
+							<div class="col-sm-9">
+								<input type="password" name="password" class="form-control" />
+								{% for message in
+								get_flashed_messages(category_filter=['pass_err'])%}
+								<p class="text-danger">{{message}}</p>
+								{% endfor %}
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<label for="c_password" class="col-sm-3 col-form-label"
+								>Confirm Password</label
+							>
+							<div class="col-sm-9">
+								<input type="password" name="c_password" class="form-control" />
+								{% for message in
+								get_flashed_messages(category_filter=['match_err'])%}
+								<p class="text-danger">{{message}}</p>
+								{% endfor %}
+							</div>
+						</div>
+
+						<div class="form-group row">
+							<div class="col-sm-9 offset-sm-3">
+								<button type="submit" class="btn btn-primary">Register</button>
+								{% for message in
+								get_flashed_messages(category_filter=['email_dup'])%}
+								<p class="text-danger">{{message}} {% endfor %}</p>
+							</div>
+						</div>
+					</form>
+				</div>
+
+				<div class="col-md-4 mb-5 mt-5 ml-5">
+					<h2>Login</h2>
+					<form method="POST" action="/validate" name="login">
+						<div class="form-group mb-3">
+							<label for="l_email">Email:</label>
+							<input type="text" name="l_email" class="form-control" />
+							{% for message in
+							get_flashed_messages(category_filter=['login_err'])%}
+							<p class="text-danger">{{message}}</p>
+							{% endfor %}
+						</div>
+
+						<div class="form-group mb-3">
+							<label for="l_password">Password</label>
+							<input type="password" name="l_password" class="form-control" />
+							{% for message in
+							get_flashed_messages(category_filter=['inc_pw'])%}
+							<p class="text-danger">{{message}}</p>
+							{% endfor %}
+						</div>
+
+						<button type="submit" class="btn btn-primary">Login</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

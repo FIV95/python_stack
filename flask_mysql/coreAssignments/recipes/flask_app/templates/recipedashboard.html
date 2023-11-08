@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome User</title>
+    <!-- Include Bootstrap CSS -->
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+    />
+</head>
+<body>
+    <header class="bg-primary text-white py-2">
+        <div class="container d-flex justify-content-between align-items-center">
+            <h1>Welcome User</h1>
+            <div>
+                <a class="btn btn-success mx-2" href="/recipeworld/newrecipe">Create</a>
+                <a class="btn btn-primary mx-2" href="/recipeworld/recipedashboard/{{session.user_id}}/favorites">Favorites</a>
+                <a class="btn btn-danger" href="/logout">Logout</a>
+            </div>
+
+        </div>
+    </header>
+    <div class="container mt-4">
+        <h2 class="mb-3">All Posted Recipes</h2>
+        <table class="table">
+            <caption>All Posted Recipes</caption>
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Time to Cook</th>
+                    <th>Posted By</th>
+                    <th>recipe_id</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for recipe in recipes %}
+                <tr>
+                    <td>{{recipe.name}}</td>
+                    <td>{{recipe.cooking_time}}</td>
+                    <td>{{recipe.user.first_name}}</td>
+                    <td>{{recipe.recipe_id}}</td>
+                    <td><a href="/recipeworld/createrecipe/view/{{recipe.recipe_id}}" class="btn btn-warning btn-sm">View</a>
+                    {% if 'user_id' in session and session.user_id  == recipe.user.id%}
+                        <a href="/recipeworld/createrecipe/edit/{{recipe.recipe_id}}" class="btn btn-info btn-sm">Edit</a>
+                        <a href='/dashboard/delete/recipe/{{recipe.recipe_id}}' class="btn btn-danger btn-sm">Delete</a>
+                    </td>
+                    {% endif %}
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
